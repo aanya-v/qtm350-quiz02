@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "life-population.html",
+    "href": "life-population.html",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "What is the relationship between life expectancy and population? Is there a correlation? Is this correlation causation?? In this page we will run some data analyses to find out (not really the causation part though merely a visualization)!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.read_csv('gapminder.csv')\nplt.scatter(df['population_millions'], df['life_expectancy'])\nplt.xlabel('Population (in millions)')\nplt.ylabel('Life Expectancy')\nplt.title('Population vs Life Expectancy')\nplt.show()"
+  },
+  {
+    "objectID": "life-population.html#introduction",
+    "href": "life-population.html#introduction",
+    "title": "Life Expectancy and Population",
+    "section": "",
+    "text": "What is the relationship between life expectancy and population? Is there a correlation? Is this correlation causation?? In this page we will run some data analyses to find out (not really the causation part though merely a visualization)!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.read_csv('gapminder.csv')\nplt.scatter(df['population_millions'], df['life_expectancy'])\nplt.xlabel('Population (in millions)')\nplt.ylabel('Life Expectancy')\nplt.title('Population vs Life Expectancy')\nplt.show()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "qtm350 quiz 2 Website",
+    "section": "",
+    "text": "Gapminder Analysis Website Project\nTo see more about the dataset, visit the Gapminder website.\n\n\nWebsite Links\nGDP per Capita and Life Expectancy\nPopulation and Life Expectancy\nAfghanistan Analysis"
+  },
+  {
+    "objectID": "country.html",
+    "href": "country.html",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "This page analyzes the changes in life expectancy, GDP per capita, and population for a specific country over time.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\ndf = pd.read_csv('gapminder.csv')\n\n\n# Filter data for Afghanistan\ncountry_data = df[df['country'] == 'Afghanistan'] \nplt.subplot(3, 1, 1)\nplt.plot(country_data['year'], country_data['life_expectancy'])\nplt.xlabel('Year')\nplt.ylabel('Life Expectancy')\nplt.title('Changes in Life Expectancy over Time')\n\nplt.subplot(3, 1, 2)\nplt.plot(country_data['year'], country_data['gdp_per_capita'])\n\n\nplt.xlabel('Year')\n\nplt.ylabel('GDP per Capita')\nplt.title('Changes in GDP per Capita over Time')\n\n\nplt.subplot(3, 1, 3)\nplt.plot(country_data['year'], country_data['population_millions'])\nplt.xlabel('Year')\nplt.ylabel('Population in millions')\nplt.title('Changes in Population over Time')\n\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "country.html#introduction",
+    "href": "country.html#introduction",
+    "title": "Country Analysis",
+    "section": "",
+    "text": "This page analyzes the changes in life expectancy, GDP per capita, and population for a specific country over time.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\ndf = pd.read_csv('gapminder.csv')\n\n\n# Filter data for Afghanistan\ncountry_data = df[df['country'] == 'Afghanistan'] \nplt.subplot(3, 1, 1)\nplt.plot(country_data['year'], country_data['life_expectancy'])\nplt.xlabel('Year')\nplt.ylabel('Life Expectancy')\nplt.title('Changes in Life Expectancy over Time')\n\nplt.subplot(3, 1, 2)\nplt.plot(country_data['year'], country_data['gdp_per_capita'])\n\n\nplt.xlabel('Year')\n\nplt.ylabel('GDP per Capita')\nplt.title('Changes in GDP per Capita over Time')\n\n\nplt.subplot(3, 1, 3)\nplt.plot(country_data['year'], country_data['population_millions'])\nplt.xlabel('Year')\nplt.ylabel('Population in millions')\nplt.title('Changes in Population over Time')\n\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "life-gdp.html",
+    "href": "life-gdp.html",
+    "title": "Life Expectancy and GDP",
+    "section": "",
+    "text": "What is the relationship between life expectancy and GDP per capita? Is there a correlation? In this page we will run some data analyses to find out!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.read_csv('gapminder.csv')\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'])\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('GDP per Capita vs Life Expectancy')\nplt.show()"
+  },
+  {
+    "objectID": "life-gdp.html#introduction",
+    "href": "life-gdp.html#introduction",
+    "title": "Life Expectancy and GDP",
+    "section": "",
+    "text": "What is the relationship between life expectancy and GDP per capita? Is there a correlation? In this page we will run some data analyses to find out!\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\ndf = pd.read_csv('gapminder.csv')\nplt.scatter(df['gdp_per_capita'], df['life_expectancy'])\nplt.xlabel('GDP per Capita')\nplt.ylabel('Life Expectancy')\nplt.title('GDP per Capita vs Life Expectancy')\nplt.show()"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

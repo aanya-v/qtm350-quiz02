@@ -1,0 +1,17 @@
+---
+title: "qtm350 quiz 2 Website"
+description: "For each of 142 countries, the gapminder dataset provides values for life expectancy, GDP per capita, and population, every five years, from 1952 to 2007."
+---
+
+# Gapminder Analysis Website Project 
+
+To see more about the dataset, visit the [Gapminder website](https://www.gapminder.org/). 
+
+# Website Links
+
+[GDP per Capita and Life Expectancy](life-gdp.html)
+
+[Population and Life Expectancy](life-population.html)
+
+[Afghanistan Analysis](country.html)
+

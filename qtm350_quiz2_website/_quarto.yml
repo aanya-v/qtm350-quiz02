@@ -1,0 +1,30 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "qtm350_quiz2_website"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: life-gdp.qmd
+        text: Life Expectancy & GDP
+      - href: life-population.qmd
+        text: Life Expectancy & Population
+      - href: country.qmd
+        text: Afghanistan Analysis
+
+
+format:
+  html:
+    theme:
+      - solar
+    css: styles.css
+    toc: true
+
+
+
+

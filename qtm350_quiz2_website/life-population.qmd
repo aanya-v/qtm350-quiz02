@@ -1,0 +1,24 @@
+---
+title: "Life Expectancy and Population"
+format: html
+---
+
+## Introduction
+
+What is the relationship between life expectancy and population? Is there a correlation? Is this correlation causation?? In this page we will run some data analyses to find out (not really the causation part though merely a visualization)!
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+df = pd.read_csv('gapminder.csv')
+plt.scatter(df['population_millions'], df['life_expectancy'])
+plt.xlabel('Population (in millions)')
+plt.ylabel('Life Expectancy')
+plt.title('Population vs Life Expectancy')
+plt.show()
+
+
+
+```
