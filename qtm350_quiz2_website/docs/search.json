@@ -54,5 +54,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "country.html#interactive-plot",
+    "href": "country.html#interactive-plot",
+    "title": "Country Analysis",
+    "section": "Interactive Plot",
+    "text": "Interactive Plot\n\nimport plotly.express as px\n\nfig = px.choropleth(df, locations='country', locationmode='country names', color='life_expectancy',\n                    animation_frame='year', range_color=[df['life_expectancy'].min(), df['life_expectancy'].max()],\n                    title='Changes in Life Expectancy by Country')\nfig.update_layout(geo=dict(showframe=False, showcoastlines=False))\nfig.show()"
   }
 ]

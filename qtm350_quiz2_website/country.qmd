@@ -39,3 +39,16 @@ plt.title('Changes in Population over Time')
 plt.tight_layout()
 plt.show()
 ```
+
+
+## Interactive Plot
+```{python}
+
+import plotly.express as px
+
+fig = px.choropleth(df, locations='country', locationmode='country names', color='life_expectancy',
+                    animation_frame='year', range_color=[df['life_expectancy'].min(), df['life_expectancy'].max()],
+                    title='Changes in Life Expectancy by Country')
+fig.update_layout(geo=dict(showframe=False, showcoastlines=False))
+fig.show()
+```
